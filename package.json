@@ -2,6 +2,7 @@
   "name": "vue-awesome-verify",
   "version": "1.0.2",
   "private": false,
+  "author": "917293906@qq.com",
   "keywords": [
     "vue",
     "verify",
@@ -59,6 +60,10 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShuYiGengYun/vue-awesome-verify"
   },
   "browserslist": [
     "> 1%",
