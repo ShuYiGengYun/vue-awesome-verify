@@ -12,35 +12,11 @@
         name: 'app',
         methods: {
             alert(text) {
-              this.callAndroid();
+
             },
             successCallback(){
-                try {
-                  window.callback.onsuccess();
-                } catch (e) {
-                  console.log(e);
-                }
-                if (this.isIOS()) {
-                   try {
-                     window.webkit.messageHandlers.onsuccess.postMessage('successed')
-                   }catch (e) {
-                     console.log(e);
-                   }
-                }
             },
             errorCallback() {
-              try {
-                 window.callback.onfailed()
-              } catch (e) {
-                console.log(e);
-              }
-              if (this.isIOS()) {
-                try {
-                  window.webkit.messageHandlers.onfailed.postMessage('failed')
-                }catch (e) {
-                  console.log(e);
-                }
-              }
             },
             isIOS() {
               let u = window.navigator.userAgent;
